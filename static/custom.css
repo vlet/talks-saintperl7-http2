@@ -1,0 +1,30 @@
+  .footnote { position: absolute; bottom: 3em; right: 3em; }
+  .left-column {
+    color: #777;
+    width: 20%;
+    height: 92%;
+    float: left;
+  }
+  .left-column h2:last-of-type, .left-column h3:last-child {
+      color: #000;
+  }
+  .right-column {
+    width: 75%;
+    float: right;
+    padding-top: 1em;
+  }
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(/static/RobotoCondensed.woff) format('woff');
+  }
+  h1, h2, h3 {
+    font-family: 'Roboto Condensed';
+  }
+  code {
+    border-radius: 5px;
+  }
+  /*div.remark-slide-container {
+    margin-left: -173px;
+  } */

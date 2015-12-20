@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>remark - <%= title %></title>
+  <meta charset="utf-8">
+  %= stylesheet '/fonts.css'
+  %= stylesheet '/basic.css'
+  %= stylesheet '/static/custom.css'
+</head>
+<body>
+  <textarea id="source"><%= $presentation %></textarea>
+  %= javascript '/remark.min.js'
+  %= javascript '/custom.js'
+  <script>var slideshow = remark.create({
+      highlightStyle: 'monokai',
+      ratio: '4:3',
+      /* arta, ascetic, dark, default, far, github,
+    googlecode, idea, ir_black, magula, monokai, rainbow, solarized_dark,
+    solarized_light, sunburst, tomorrow, tomorrow-night-blue,
+    tomorrow-night-bright, tomorrow-night, tomorrow-night-eighties, vs, zenburn
+    */
+    highlightLines: true
+  });</script>
+</body>
+</html>
+
